@@ -1,1 +1,1 @@
-DecodeLabs_Projects
+DecodeLabs_Internship_Projects
