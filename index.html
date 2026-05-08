@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Front end Project #1</title>
+<title>Front end Project #2</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,66 +11,47 @@
 
 <header>
   <nav class="navbar">
-    <img class="logo" src="images/1.webp" alt="logo">
-    
+    <img class="logo" src="logo.webp" alt="logo">
+     
+  <div class="nav-container">
+    <button class="menu-toggle" aria-label="Open menu">
+      ☰
+    </button>
+
     <ul class="navbarlist">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">View</a></li>
     </ul>
+  </div>
   </nav>
 </header>
+
+  <section class="sidebar">    
+    <ul class="sidebarlist">
+      <li><a href="#">Profile</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </section>
 
 <main>
 
 <section class="hero">
-  <h1>Hello everyone, this is my first frontend project at DecodeLabs Internship</h1>
-  <p>A simple and clean UI built using HTML and CSS</p>
-</section>
+    <img src="web.webp" class="image">
+    <p>This is<b style="color: rgb(22, 226, 32);"> my second project in DecodeLabs Internship</b> with responsive frontend web layout built using HTML and CSS with 
+      a mobile-first design approach in Decode. It features a modern navigation bar with hamburger 
+      menu behavior, a functional sidebar, a hero section with image and content alignment,
+       and a structured footer. The project demonstrates the use of CSS Grid for macro layout, 
+       Flexbox for component alignment, responsive media queries, fluid sizing, and 
+      accessible user interface design optimized for mobile, tablet, and desktop screens.</p>
 
-<section class="skills">
-  <h3>Top Skills</h3>
-
-  <figure>
-    <img src="images/webdev.webp" class="image">
-    <figcaption>Frontend Development</figcaption>
-  </figure>
-
-   <figure>
-  <img src="images/2.webp" alt="IT Support" class="image">
-  <figcaption>IT Support</figcaption>
-  </figure>
-
-  <figure>
-  <img src="images/vid.webp" alt="Video Editing" class="image">
-  <figcaption>Video Editing</figcaption>
-  </figure>
-
-  <figure>
-  <img src="images/it.webp" alt="Networking" class="image">
-  <figcaption>Networking</figcaption>
-  </figure>
-
-</section>
-<section class="contact">
-  <h3>Contact me</h3>
-
-  <label for="name">Name</label>
-  <input id="name" type="text" placeholder="Enter your name">
-
-  <label for="email">Email</label>
-  <input id="email" type="email" placeholder="Enter your email">
-
-  <label for="message">Message</label>
-  <textarea id="message" placeholder="Write your message"></textarea><br>
-
-  <button>Send</button>
 </section>
 </main>
 
 <footer>
-  <p>By Natinael Fikadu #DecodeLabs-Internship-Project-1</p>
+  <p>DecodeLabs-Internship-Project-2</p>
+  <p>By Natinael Fikadu &copy;2026</p>
   <p>Contact: nath@email.com</p>
 </footer>
 
