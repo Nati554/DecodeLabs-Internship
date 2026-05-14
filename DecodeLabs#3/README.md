@@ -1,2 +1,43 @@
-This project is a modern and responsive personal portfolio website developed using pure HTML5, CSS3, and Vanilla JavaScript.It has interactive and user-friendly interface.The application implements modern front-end development concepts including DOM manipulation, event listeners, localStorage, dynamic element creation, responsive layouts, and dark/light theme functionality
-The project also follows software engineering principles such as the IPO (Input–Process–Output) model, decoupled logic, reusable functions, and protected state management using the JavaScript module pattern. Additionally, it features responsive navigation, CSS animations, mobile-first design, and interactive form handling without using external frameworks.
+# NATH-TECH-MAN Portfolio Website
+
+A modern and responsive personal portfolio website built using pure HTML, CSS, and JavaScript.  
+This project showcases skills, services, and contact functionality while implementing modern front-end development concepts without using Bootstrap or external frameworks.
+
+---
+
+## 🚀 Features
+
+- Responsive design for mobile, tablet, and desktop
+- Dark / Light theme toggle
+- Mobile hamburger navigation menu
+- Animated hero section and cards
+- Interactive contact form
+- LocalStorage integration
+- Dynamic DOM manipulation
+- Modern CSS Grid and Flexbox layout
+- Smooth scrolling navigation
+- Reusable JavaScript functions
+- Protected application state using Module Pattern
+- IPO (Input → Process → Output) model implementation
+- Decoupled JavaScript logic
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- Vanilla JavaScript (ES6)
+
+---
+
+## 📂 Project Structure
+
+```bash
+project-folder/
+│
+├──images
+├──README.md
+├── index.html
+├── script.js
+├── style.css
