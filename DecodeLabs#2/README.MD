@@ -64,8 +64,8 @@ This project follows a mobile-first development approach:
 ```bash
 project-folder/
 │
+├── README.md
 ├── index.html
 ├── style.css
-├── logo.jfif
-├── web.jfif
-└── README.md
+├── logo.webp
+├── web.webp
