@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front End Project#3</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container nav-wrapper">
+
+    <div class="logo">
+      <img src="images/logo.avif" alt="logo">
+      <span>NATH-TECH-MAN</span>
+    </div>
+
+    <button class="menu-btn">☰</button>
+
+    <ul class="navbaritems">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li>
+        <button id="theme-change" title="Change the theme">
+          <img src="images/theme.webp" class="theme" >
+        </button>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="container" >
+    <h1>WELCOME <span>TO NATH-TECH-MAN</span></h1>
+    <p class="intro">This project is a modern and responsive personal portfolio website developed 
+      using pure HTML5, CSS3, and Vanilla JavaScript.It has interactive and user-friendly interface.
+      The application implements modern front-end development concepts including DOM manipulation, event listeners, localStorage, 
+      dynamic element creation, responsive layouts, and dark/light theme functionality
+       The project also follows software engineering principles such as the IPO (Input–Process–Output) model, decoupled logic, reusable functions, 
+      and protected state management using the JavaScript module pattern.
+      Additionally, it features responsive navigation, CSS animations, mobile-first design, and interactive form handlin
+       without using external frameworks.
+</p>
+  </div>
+</section>
+
+<section id="gallery" class="content-hold">
+  <div class="container">
+    <h2 class="text-center">Tech Photo gallery</h2>
+    <div class="row">
+       
+        <div class="card">
+          <img src="images/1.webp" class="project-img" alt="project">
+        </div>
+        
+        <div class="card">
+          <img src="images/2.webp" class="project-img" alt="project">
+        </div>
+ 
+        <div class="card">
+          <img src="images/5.webp" class="project-img" alt="project">
+        </div>
+                  
+        <div class="card ">
+          <img src="images/4.webp" class="project-img" alt="project">
+        </div>
+      
+        <div class="card">
+          <img src="images/fr.webp" class="project-img" alt="project">
+        </div>
+            
+        <div class="card">
+          <img src="images/it.webp" class="project-img" alt="project">
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="content-hold bg-light">
+  <div class="container text-center" >
+    <h2>About Me</h2>
+    <p>I am a passionate<b> IT professional</b> with skills in IT support, front-end development, networking, hardware and software installation, and system maintenance. I enjoy solving technical problems, creating efficient solutions, and using technology 
+      to improve user experience and productivity.</p>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="content-hold bg-light">
+  <div class="container" >
+    <h2 class="text-center">Contact Me</h2>
+    <form action="" method="POST">
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" autocomplete="cc-name">
+        </div>
+        <div class="col-md-6 mb-3">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" autocomplete="email">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <textarea name="message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+      </div>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+  <p><b>By Nathnael Fikadu 2026</b></p><p>Telegram: @nath_alive</p><p>Linkedin:natinael-fikadu-b05862257</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

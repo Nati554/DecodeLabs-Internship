@@ -1,0 +1,306 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:1.6;
+    background:#f4f4f4;
+    color:#222;
+    transition:0.4s;
+}
+
+/*for dark theme */
+body.dark{
+    background:#121212;
+    color:#f4f4f4;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.navbar{
+    background:#0d6efd;
+    color:white;
+    padding:1rem 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+body.dark .navbar{
+    background:#1f1f1f;
+}
+
+.nav-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+.logo img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.navbaritems{
+    display:flex;
+    gap:1rem;
+    list-style:none;
+    align-items:center;
+}
+
+.navbaritems a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.navbaritems a:hover{
+    color:yellow;
+}
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:1.5rem;
+    cursor:pointer;
+}
+
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(to right,#0df5fd,#4ea5ff);
+    color:white;
+    padding:2rem;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:1rem;
+    animation:slideDown 1s ease;
+}
+
+.hero span{
+    color:yellow;
+}
+
+.intro{
+    max-width:700px;
+    margin:auto;
+    padding: auto;
+}
+
+.text-center{
+  padding-top: 15px;
+  text-align: center;
+}
+
+.content-hold{
+    padding:4rem 0;
+}
+
+.row{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:1.5rem;
+}
+
+.card{
+    background:white;
+    padding:1rem;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+    animation:fadeIn 1s ease;
+}
+
+body.dark .card{
+    background:#1e1e1e;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.project-img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+
+#about{
+    text-align:center;
+    background: antiquewhite;
+}
+
+body.dark #about{
+    background:#1e1e1e;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+
+    }
+
+input,
+textarea{
+    width:100%;
+    padding:1rem;
+    margin-bottom:1rem;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:1rem;
+}
+
+input:focus,
+textarea:focus{
+    outline:none;
+    border:2px solid #0d6efd;
+    transform:scale(1.02);
+    transition:0.3s;
+}
+
+#theme-change{
+    background:none;
+    border:none;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0.4rem;
+    border-radius:50%;
+    transition:0.3s;
+}
+
+
+#theme-change:hover{
+    background:rgba(255,255,255,0.2);
+    transform:rotate(10deg) scale(1.1);
+}
+
+.theme{
+    width:32px;
+    height:32px;
+    object-fit:cover;
+    transition:0.3s;
+    border-radius: 20px;
+}
+
+.btn{
+    background:#3160eed3;
+    color:white;
+    border:none;
+    padding:0.8rem 1.5rem;
+    cursor:pointer;
+    border-radius:2rem;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#084298;
+}
+
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:2rem;
+}
+
+
+.message-box{
+    margin-top:2rem;
+}
+
+.message{
+    background:white;
+    padding:1rem;
+    margin-bottom:1rem;
+    border-left:3px solid #0d6efd;
+    border-bottom:1px solid #084298;
+    border-radius:5px;
+}
+
+body.dark .message{
+    background:#1e1e1e;
+}
+
+/* animation */
+@keyframes slideDown{
+    from{
+        transform:translateY(-50px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity:1;
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+
+
+@media(max-width:768px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    .navbaritems{
+        display:none;
+        flex-direction:column;
+        background:#0d6efd;
+        position:absolute;
+        top:80px;
+        right:0;
+        width:100%;
+        padding:1rem;
+    }
+
+    body.dark .navbaritems{
+        background:#1f1f1f;
+    }
+
+    .navbaritems.active{
+        display:flex;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+}
